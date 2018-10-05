@@ -96,7 +96,7 @@ public class UserHandler {
      * 根据id删除用户
      *
      * @param request request
-     * @return 添加的用户数据
+     * @return 用户数据存在，删除成功返回200，用户不数据存在，删除失败返回404
      */
     public Mono<ServerResponse> deleteUserById(ServerRequest request) {
         // 从路径中获取用户id
